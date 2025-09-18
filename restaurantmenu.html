@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+    <style>
+         body {
+         font-family: Arial, sans-serif;
+         background-color: #fff8f0;
+         margin: 30px;
+       }
+
+
+        h3{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: right;
+            color: rgb(99, 16, 177);
+            font-size: larger;
+        }
+        .welcome{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            word-spacing:4px ;
+        }
+        h3::before {
+            content: "\f2e7"; /* Font Awesome utensils icon */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            margin-right: 10px;
+            position: absolute;
+            left: -30px;
+            top: 0;
+            color: #d35400;
+       }   
+       .welcome {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      word-spacing: 5px;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }  
+    table {
+      width: 60%;
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid #333;
+    }  
+    th, td {
+      text-align: center;
+      vertical-align: middle;
+      padding: 12px;
+      font-size: 16px;
+    }
+
+    .menu-icon::before {
+      content: "\f805"; /* Font Awesome carrot icon */
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      margin-right: 8px;
+      color: #27ae60;
+    } 
+    a {
+      text-decoration: none;
+      color: #2980b9;
+    }
+
+    a:hover {
+      color: #c0392b;
+    }
+</style>
+</head>
+<body>
+    <h3>Spice Symphony</h3>
+  <div class="welcome">Welcome to our flavorful world</div>
+
+  <table>
+    <tr>
+      <th class="menu-icon">Menu Item</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>Paneer Tikka</td>
+      <td>₹250</td>
+    </tr>
+    <tr>
+      <td>Butter Naan</td>
+      <td>₹40</td>
+    </tr>
+    <tr>
+      <td>Masala Dosa</td>
+      <td>₹120</td>
+    </tr>
+  </table>
+
+  <p style="text-align:center; margin-top: 30px;">
+    <a href="#">View Full Menu</a>
+  </p>
+
+
+    
+</body>
+</html>
