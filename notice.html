@@ -1,21 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Website</title>
-    <style>
-        body{
-            margin: 0%;
-            font-family: fantasy;
-            display: flex;
-            align-items: center;
-            background-color: rgb(89, 135, 150);
-            height: 100vh;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notice Box with Image Wrapper</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      padding: 40px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      color: #cc0000;
+      margin-bottom: 20px;
+    }
+
+    .notice-box {
+      position: relative;
+      background-color: #fffbea;
+      border-left: 4px solid #ffcc00;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      font-size: 16px;
+      line-height: 1.6;
+      height: 200px;
+      overflow-y: auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .image-wrapper {
+      float: left;
+     
+    }
+
+    .notice-image {
+      width: 120px;
+      height: 120px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .notice-text {
+      overflow: hidden;
+    }
+
+    .badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #ffcc00;
+      color: #333;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 6px 10px;
+      border-radius: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    @media (max-width: 600px) {
+      .image-wrapper {
+        float: none;
+        text-align: center;
+        margin: 0 auto 20px;
+      }
+
+      .notice-text {
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
-    
+
+  <h2>📢 Important Notice</h2>
+
+  <div class="notice-box clearfix">
+    <div class="badge">NEW</div>
+    <div class="image-wrapper">
+      <img src="C:\Users\DEVIKA NAVAKUMAR\Pictures\school.jpg" alt="Notice Icon" class="notice-image" />
+    </div>
+    <div class="notice-text">
+      <strong>Fire Drill Announcement:</strong><br />
+      The school will conduct a fire drill on Monday, September 22nd at 10:00 AM. All students must assemble at the designated safety zones as instructed. Please follow the guidelines shared by your class teacher and remain calm during the exercise. <br /><br />
+      Additional instructions will be provided during the morning assembly. Teachers will guide students through the evacuation routes and safety protocols. Participation is mandatory for all students and staff.
+    </div>
+  </div>
+
 </body>
 </html>
