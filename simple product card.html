@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Product Card</title>
+    <style>
+        div{
+            margin: top 100px;
+            padding:15px;
+            box-sizing:border-box
+        }
+        .img{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            border-radius: 50%;
+        }
+        .h2{
+            color: rgb(255, 0, 0);
+            font-size: 25px;
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+        .container{
+            text-align: center;
+            margin:auto;
+            width:200px;
+            height: 200px;
+        }
+        @media  only screen  and (max-width: 600px) {
+            .img{
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+            }
+            .h2{
+                font-size: 15px;
+            }
+        
+            
+        }
+        @media only screen and (orientation: landscape){
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <img class="img" src="https://cdn.pixabay.com/photo/2023/10/12/13/05/headphones-8310796_640.jpg" alt="product image">
+    <h2 class="h2">Product Name: Boat Rockerz 255 Pro+ Bluetooth On Ear Head</h2>
+    <button> BUY NOW</button>
+    </div>
+</body>
+</html>
